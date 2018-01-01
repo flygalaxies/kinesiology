@@ -1,0 +1,53 @@
+.container{
+  height: 50vh;
+}
+.benefits{
+  background-color: rgba(0, 8, 62, 0.5);
+  height: 27.5vh;
+  margin-top: 2.5%;
+  border-radius: 30px;
+  text-align: center;
+  color: #00cbff;
+  float: right;
+}
+.definition{
+  margin: 2.5% auto 0 auto;
+  height: 27.5vh;
+  border-radius: 30px;
+  background-color: rgba(0, 8, 62, 0.5);
+}
+.imgSize{
+  max-height: 27.5vh;
+}
+.definitionMobile{
+  display: none;
+}
+.kinisiologistsLink{
+  margin: 2.5%;
+  height: 27.5vh;
+  border-radius: 30px;
+  background-color: rgba(0, 8, 62, 0.5);
+  color: #00cbff;
+  float: left;
+  text-align: center;
+  .downArrow{
+    width: 7.5vw;
+  }
+}
+@media screen and (max-width: 600px){
+  .definition{
+    display: none;
+  }
+  .benefits{
+    display: none;
+  }
+  .definitionMobile{
+    display: block;
+    margin-top: 2.5%;
+    height: 30vh;
+    border-radius: 30px;
+    background-color: rgba(0, 8, 62, 0.5);
+    text-align: center;
+    color: greenyellow;
+  }
+}

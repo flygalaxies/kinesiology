@@ -1,0 +1,17 @@
+<div id="mainSidenav" class="sidenav">
+  <a href="javascript:void(0)" id="closeBtn" class="closebtn" (click)="closeNav()">&times;</a>
+  <img class="logo" src="../../assets/KinesiologyLogo.png" alt="Kinesiology Practice Logo">
+  <a routerLink="/">Home</a>
+  <a routerLink="/">FoodForLife</a>
+  <a routerLink="/">JoinUs</a>
+</div>
+
+<div id="main">
+  <div class="float-left openBtn">
+    <span style="font-size:30px;cursor:pointer" (click)="openNav()" class="fa fa-bars" aria-hidden="true"></span>
+  </div>
+  <div class="mainLogo">
+    <img class="logo" src="../../assets/KinesiologyLogo1.png" alt="Kinesiology Practice Logo">
+  </div>
+  <router-outlet></router-outlet>
+</div>

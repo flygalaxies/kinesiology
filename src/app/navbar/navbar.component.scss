@@ -1,0 +1,87 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #09212d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0%;
+  .logo{
+    position: relative;
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #296a94;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #00cbff;
+}
+
+.sidenav .closebtn {
+  position: relative;
+  top: 0;
+  float: right;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  height: 250vh;
+  background: url("../../assets/stars2.png")no-repeat fixed center;
+  //background-color: black;
+  background-size: cover;
+  transition: margin-left .5s;
+  .mainLogo{
+    padding-top: 0%;
+    background-color: rgba(0, 8, 62, 0.3);
+    .logo{
+      position: relative;
+      width: 50%;
+      display: block;
+      margin: auto;
+    }
+  }
+  .openBtn{
+    position: fixed;
+    color: #f1f1f1;
+    left: 5vw;
+    top: 12.5vh;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #main{
+    .mainLogo{
+      padding-top: 0%;
+      padding-left: 10%;
+      background-color: rgba(0, 8, 62, 0.3);
+      .logo{
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: auto;
+      }
+    }
+    .openBtn{
+      position: fixed;
+      color: #f1f1f1;
+      left: 5vw;
+      top: 5vh;
+      z-index: 2;
+    }
+  }
+}
