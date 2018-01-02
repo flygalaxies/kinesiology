@@ -2,6 +2,7 @@ import {ModuleWithProviders} from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {BabsieComponent} from './babsie/babsie.component';
+import {MelinaComponent} from './melina/melina.component';
 
 export const routes: Routes = [
   {
@@ -11,6 +12,10 @@ export const routes: Routes = [
   {
     path: 'babsiePage',
     component: BabsieComponent
+  },
+  {
+    path: 'melinaPage',
+    component: MelinaComponent
   }  
 ];
 

@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { KinisiologistsComponent} from './kinisiologists/kinisiologists.component';
 import {BabsieComponent} from './babsie/babsie.component';
+import {MelinaComponent} from './melina/melina.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {BabsieComponent} from './babsie/babsie.component';
     NavbarComponent,
     HomeComponent,
     KinisiologistsComponent,
-    BabsieComponent
+    BabsieComponent,
+    MelinaComponent
   ],
   imports: [
     ModalModule.forRoot(),

@@ -1,0 +1,26 @@
+.row{
+    margin-top: 2%;
+}
+.imageContainer{
+    width: 100%;
+}
+.summary{
+    font-size: 60;
+    background-color: white;
+    text-align: center;
+}
+
+.map{    
+    height: 30vh;
+    agm-map {
+        height: 300px;
+      }
+}
+.prices{
+    height: 60vh;
+    background-color: aliceblue;
+}
+.table-bordered{
+    text-align: center;
+    font-size: xx-small;
+}
