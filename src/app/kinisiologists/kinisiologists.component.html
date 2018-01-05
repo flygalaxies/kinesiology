@@ -1,7 +1,8 @@
 <div class="container">
+  <h1>KENISIOLOGISTS TO CHOOSE FROM</h1>
   <div class="row justify-content-center">
     <div class="card">
-      <button type="button" class="btn" [routerLink]="['/babsiePage']">
+      <button type="button" class="btn" (click)="babsieModal.show()">
         <img src="./../../assets/babsie.jpg">
         <h2><b>Babsie Nothnagel</b></h2>
         <p> Title Goes here</p>
@@ -13,6 +14,24 @@
         <h2><b>Melina Geertsema</b></h2>
         <p> Title Goes here</p>
       </button>
+    </div>
+  </div>
+</div>
+
+<!--Large modal-->
+<!--<p>Small modal window have small width on screens only above 768px(boostrap3) and 576px(bootstrap4)</p>-->
+<div bsModal #babsieModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Babsie Nothnagel</h4>
+        <button type="button" class="close pull-right" (click)="babsieModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-babsie></app-babsie>                                     
+      </div>
     </div>
   </div>
 </div>

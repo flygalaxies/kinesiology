@@ -1,17 +1,30 @@
+.container{
+  h1{
+    text-align: center;
+    color: #00cbff;
+  }
+}
 .btn{
   background-color: transparent;
   color: #33bcff;
 }
-.card{
-  position: relative;
+.card{  
   box-shadow: 0 4px 8px 0 rgb(174, 174, 174);
   background-color: rgba(0,0,0,0.25);
-  border-radius: 2px;
-  width: 25vw;
+  border-radius: 2px;  
   margin: 0 10% 0 10%;
 }
 .card:hover{
   cursor: pointer;
   box-shadow: 0 12px 20px 0 rgb(174, 174, 174);
   transform: scale(1.05);
+}
+.modal{
+  background-color: rgba(0,0,0,0.4);
+  .modal-dialog{
+    max-width: 75%;
+    .modal-content{    
+      background-color: rgba(55, 130, 175, 0.5);  
+    }
+  }
 }

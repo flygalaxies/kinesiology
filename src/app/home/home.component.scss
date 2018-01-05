@@ -1,5 +1,20 @@
-.container{
-  height: 50vh;
+.navigation{
+  margin-top: 1%;
+  margin-bottom: 1%;   
+  background-color: rgba(55, 130, 175, 0.5);
+  max-width: 100%;        
+  .btn{
+    margin: 1%;
+    border-radius: 25px;
+    background-color: rgba(0, 8, 62, 0.5);
+    color: #00cbff;
+  }
+}
+.kinesiologists{
+  margin-top: 2.5%;  
+}
+.mainContainer{
+  height: 50vh;  
 }
 .benefits{
   background-color: rgba(0, 8, 62, 0.5);

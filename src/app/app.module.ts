@@ -6,15 +6,18 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
 import { CarouselModule } from 'ngx-bootstrap';
-import  {ModalModule} from 'ngx-bootstrap';
+import {ModalModule} from 'ngx-bootstrap';
 import {AgmCoreModule} from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { KinisiologistsComponent} from './kinisiologists/kinisiologists.component';
-import {BabsieComponent} from './babsie/babsie.component';
-import {MelinaComponent} from './melina/melina.component'
+import { BabsieComponent } from './babsie/babsie.component';
+import { MelinaComponent } from './melina/melina.component';
+import { WhatIsComponent } from "./what-is/what-is.component";
+import { TypesComponent } from './types/types.component';
+import { BenefitsComponent } from './benefits/benefits.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import {MelinaComponent} from './melina/melina.component'
     HomeComponent,
     KinisiologistsComponent,
     BabsieComponent,
-    MelinaComponent
+    MelinaComponent,
+    WhatIsComponent,
+    TypesComponent,
+    BenefitsComponent
   ],
   imports: [
     ModalModule.forRoot(),
