@@ -18,6 +18,9 @@ import { MelinaComponent } from './melina/melina.component';
 import { WhatIsComponent } from "./what-is/what-is.component";
 import { TypesComponent } from './types/types.component';
 import { BenefitsComponent } from './benefits/benefits.component';
+import { FoodForLifeComponent } from './food-for-life/food-for-life.component';
+import { JoinUsComponent } from './join-us/join-us.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { BenefitsComponent } from './benefits/benefits.component';
     MelinaComponent,
     WhatIsComponent,
     TypesComponent,
-    BenefitsComponent
+    BenefitsComponent,
+    FoodForLifeComponent,
+    JoinUsComponent,
+    FeedbackComponent
   ],
   imports: [
     ModalModule.forRoot(),

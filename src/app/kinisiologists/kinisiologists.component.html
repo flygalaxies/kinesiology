@@ -1,18 +1,20 @@
 <div class="container">
-  <h1>KENISIOLOGISTS TO CHOOSE FROM</h1>
+  <h1>KINESIOLOGISTS TO CHOOSE FROM</h1>
   <div class="row justify-content-center">
     <div class="card">
-      <button type="button" class="btn" (click)="babsieModal.show()">
+      <button type="button" class="btn" [routerLink]="['/babsiePage']">
         <img src="./../../assets/babsie.jpg">
         <h2><b>Babsie Nothnagel</b></h2>
-        <p> Title Goes here</p>
+        <p>Benoni AH</p>
+        <p>7 Types</p>
       </button>
     </div>
     <div class="card" id="milena" [routerLink]="['/melinaPage']">
       <button type="button" class="btn">
         <img src="./../../assets/milena2.jpg">
         <h2><b>Melina Geertsema</b></h2>
-        <p> Title Goes here</p>
+        <p>Elardus Park</p>
+        <p>3 Types</p>
       </button>
     </div>
   </div>

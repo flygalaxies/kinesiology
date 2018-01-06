@@ -40,13 +40,13 @@
 }
 
 #main {  
-  background: url("../../assets/stars2.png")no-repeat fixed center;
-  //background-color: black;
-  background-size: cover;
+  background: url("../../assets/stars2.png")no-repeat fixed center;  
+  background-size: cover;  
   transition: margin-left .5s;
+  padding-bottom: 5%;
   .mainLogo{
     padding-top: 0%;
-    background-color: rgba(0, 8, 62, 0.3);
+    background-color: rgba(0, 8, 62, 0.6);
     .logo{
       position: relative;
       width: 50%;

@@ -1,91 +1,98 @@
-<div class="container">
-    <div class="row">
-      <div class="col-4">
-        <img src="./../../assets/milena2.jpg" class="imageContainer">     
-      </div>
-      <div class="summary col-8">
-        <h1>ABOUT ME</h1>
-        Melina has always had a passion for assisting in the physical and emotional healing of mankind.
-        The wellbeing of the human body and spirit is  of paramount importance to Melina.
-        Her journey with kinesiology, brought about the realisation that the human body was created in such perfection,
-        allowing it to heal within itself. She recognises the importance of teaching and empowering people,
-        to actually take responsibility for their own health and wellbeing.
-        The slightest change and improvement is experienced as a massive shift and victory.
-        Melina equally loves interacting with humans as well as with animals and nature.
-        She enjoys camping and the outdoors and is an avid sports follower.
-        “If you are serious about your own health and wellbeing,
-        and you are prepared to take personal responsibility for your own wellbeing,
-        I would love to help and guide you on this wonderful  journey.
-        It will not only change your health, it ll change your life, at home, in the workplace and,
-        on the sports fields.”
-             
-      </div>
-    </div>  
-    <div class="row">
-      <div class="map col-5">
-          <agm-map [latitude]="-25.83697" [longitude]="28.2618283" [zoom]=10>
-              <agm-marker [latitude]="-25.83697" [longitude]="28.2618283"></agm-marker>            
-            </agm-map>
-            -25.83697,28.2618283,17
-      </div>
-      <div class="prices col-7">
-        <h1 style="text-align: center">PRICES</h1>
-        <table class="table">
-          <tr>
-            <th>TIME (min)</th>
-            <th>COST</th>
-          </tr>
-          <tr>
-              <td>45</td>
-              <td>R400</td>          
-          </tr>
-          <tr>
-            <td>60</td>
-            <td>R520</td>          
-          </tr>
-          <tr>
-            <td>90</td>
-            <td>R650</td>
-          </tr>
-        </table>
-        <table class="table-bordered">        
-          <tr>
-            <th colspan="2">Lymphatic drainage massage</th>
-            <th colspan="2">Allergy and nutrition protocol</th>
-            <th colspan="2">Weight loss and nutriotion protocol</th>
-            <th colspan="2">Chakra balance</th>
-            <th colspan="2">Pelvic girdle assessment & alignment</th>
-            <th colspan="2">Animal sessions</th>          
-          </tr>
-          <tr>
-            <td>1st session</td>
-            <td>sessions thereafter</td>
-            <td>1st session</td>
-            <td>sessions thereafter</td>
-            <td>1st session</td>
-            <td>sessions thereafter</td>
-            <td>1st session</td>
-            <td>sessions thereafter</td>
-            <td>1st session</td>
-            <td>sessions thereafter</td>
-            <td>1st session</td>
-            <td>sessions thereafter</td>
-          </tr>
-          <tr>
-              <td>60</td>
-              <td>40</td>
-              <td>90</td>
-              <td>60</td>
-              <td>90</td>
-              <td>60</td>
-              <td>45</td>
-              <td>-</td>
-              <td>90</td>
-              <td>60</td>
-              <td>90</td>
-              <td>90</td>
-          </tr>
-        </table>
-      </div>
+<div class="container main">
+  <h1>MELINA GEERTSEMA</h1>
+  <div class="row">
+    <div class="col-4">
+      <img src="./../../assets/milena2.jpg" class="imageContainer">
+    </div>
+    <div class="summary col-8">
+      <h1>ABOUT ME</h1>
+      Melina has always had a passion for assisting in the physical and emotional healing of mankind. The wellbeing of the human
+      body and spirit is of paramount importance to Melina. Her journey with kinesiology, brought about the realisation that
+      the human body was created in such perfection, allowing it to heal within itself. She recognises the importance of
+      teaching and empowering people, to actually take responsibility for their own health and wellbeing. The slightest change
+      and improvement is experienced as a massive shift and victory. Melina equally loves interacting with humans as well
+      as with animals and nature. She enjoys camping and the outdoors and is an avid sports follower. “If you are serious
+      about your own health and wellbeing, and you are prepared to take personal responsibility for your own wellbeing, I
+      would love to help and guide you on this wonderful journey. It will not only change your health, it ll change your
+      life, at home, in the workplace and, on the sports fields.”
     </div>
   </div>
+  <div class="row justify-content-center">
+    <div class="contact col-5">
+      <h2>CONTACT ME</h2>
+      <h4>Email address:
+        <h5>bnothnagel@kinesiologypractice.co.za</h5>
+      </h4>
+      <h4>Phone Number:
+        <h5>061 795 3604 (Whatsapp available)</h5>
+      </h4>
+      <h4>Location:
+        <h5>264 9th Road Breddel AH</h5>
+      </h4>
+      <div class="map">
+        <agm-map #map [latitude]="-25.83697" [longitude]="28.2618283" [zoom]=10>
+          <agm-marker [latitude]="-25.83697" [longitude]="28.2618283"></agm-marker>
+        </agm-map>
+      </div>
+    </div>
+    <div class="prices col-6">
+      <h1 style="text-align: center">PRICES</h1>
+      <table class="table table-bordered cost">
+        <tr>
+          <th>TIME (min)</th>
+          <th>COST</th>
+        </tr>
+        <tr>
+          <td>45</td>
+          <td>R400</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>R520</td>
+        </tr>
+        <tr>
+          <td>90</td>
+          <td>R650</td>
+        </tr>
+      </table>
+      <table class="table-bordered times">
+        <tr>
+          <th colspan="2">Lymphatic drainage massage</th>
+          <th colspan="2">Allergy and nutrition protocol</th>
+          <th colspan="2">Weight loss and nutriotion protocol</th>
+          <th colspan="2">Chakra balance</th>
+          <th colspan="2">Pelvic girdle assessment & alignment</th>
+          <th colspan="2">Animal sessions</th>
+        </tr>
+        <tr>
+          <td>1st session</td>
+          <td>sessions thereafter</td>
+          <td>1st session</td>
+          <td>sessions thereafter</td>
+          <td>1st session</td>
+          <td>sessions thereafter</td>
+          <td>1st session</td>
+          <td>sessions thereafter</td>
+          <td>1st session</td>
+          <td>sessions thereafter</td>
+          <td>1st session</td>
+          <td>sessions thereafter</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>40</td>
+          <td>90</td>
+          <td>60</td>
+          <td>90</td>
+          <td>60</td>
+          <td>45</td>
+          <td>-</td>
+          <td>90</td>
+          <td>60</td>
+          <td>90</td>
+          <td>90</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,12 +1,13 @@
 <div class="container navigation">
-  <div class="row justify-content-center">
-    <button class="btn col-3" [routerLink]="['/home', {outlets: {'info': ['whatIs']}}]">WHAT IS KINESIOLOGY?</button>
-    <button class="btn col-3" [routerLink]="['/home', {outlets: {'info': ['types']}}]">TYPES OF SESSIONS</button>
-    <button class="btn col-3" [routerLink]="['/home', {outlets: {'info': ['benefits']}}]">BENEFITS OF KINESIOLOGY</button>
+  <div class="row justify-content-center">    
+    <button class="btn col-2" >GO TO KINESIOLOGISTS</button>    
+    <button class="btn col-2" [routerLink]="['/home', {outlets: {'info': ['whatIs']}}]">WHAT IS KINESIOLOGY?</button>
+    <button class="btn col-2" [routerLink]="['/home', {outlets: {'info': ['types']}}]">TYPES OF SESSIONS</button>
+    <button class="btn col-2" [routerLink]="['/home', {outlets: {'info': ['benefits']}}]">BENEFITS OF KINESIOLOGY</button>
   </div>  
 </div>
 <router-outlet name="info"></router-outlet>
-<div class="kinesiologists">
+<div class="kinesiologists" id="kinesiologists">
   <app-kinisiologists></app-kinisiologists>
 </div>
 <!--<div class="definition  col-9">

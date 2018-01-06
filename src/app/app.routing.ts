@@ -6,6 +6,9 @@ import { MelinaComponent } from './melina/melina.component';
 import { WhatIsComponent } from 'app/what-is/what-is.component';
 import { TypesComponent } from './types/types.component';
 import { BenefitsComponent } from './benefits/benefits.component';
+import { FoodForLifeComponent } from './food-for-life/food-for-life.component';
+import { JoinUsComponent } from './join-us/join-us.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 export const routes: Routes = [
   {
@@ -35,9 +38,25 @@ export const routes: Routes = [
     ]
   },
   {
+    path: 'babsiePage',
+    component: BabsieComponent
+  },
+  {
     path: 'melinaPage',
     component: MelinaComponent
-  }  
+  },
+  {
+    path: 'foodForLife',
+    component: FoodForLifeComponent
+  },
+  {
+    path: 'joinUs',
+    component: JoinUsComponent
+  },
+  {
+    path: 'feedback',
+    component: FeedbackComponent
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
