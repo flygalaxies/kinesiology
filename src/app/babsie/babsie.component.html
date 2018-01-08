@@ -17,9 +17,15 @@
   <div class="row justify-content-center">
     <div class="contact col-5">
       <h2>CONTACT ME</h2>
-      <h4>Email address: <h5>bnothnagel@kinesiologypractice.co.za</h5></h4>
-      <h4>Phone Number: <h5>061 795 3604 (Whatsapp available)</h5></h4>
-      <h4>Location: <h5>264 9th Road Breddel AH</h5></h4>
+      <h4>Email address:
+        <a  href="mailto:babsie.nothnagel@kinesiologypractice.co.za?cc=admin@kinesiologypractice.co.za"><h5>babsie.nothnagel@kinesiologypractice.co.za</h5></a>
+      </h4>
+      <h4>Phone Number:
+        <h5>061 795 3604 (Whatsapp available)</h5>
+      </h4>
+      <h4>Location:
+        <h5>264 9th Road Breddel AH</h5>
+      </h4>
       <div class="map">
         <agm-map #map [latitude]="-26.092691" [longitude]="28.313872" [zoom]=10>
           <agm-marker [latitude]="-26.092691" [longitude]="28.313872"></agm-marker>
@@ -27,63 +33,19 @@
       </div>
     </div>
     <div class="prices col-6">
-      <h1 style="text-align: center">PRICES</h1>
-      <table class="table table-bordered cost">
-        <tr>
-          <th>TIME (min)</th>
-          <th>COST</th>
-        </tr>
-        <tr>
-          <td>45</td>
-          <td>R400</td>
-        </tr>
-        <tr>
-          <td>60</td>
-          <td>R520</td>
-        </tr>
-        <tr>
-          <td>90</td>
-          <td>R650</td>
-        </tr>
-      </table>
-      <table class="table-bordered times">
-        <tr>
-          <th colspan="2">Lymphatic drainage massage</th>
-          <th colspan="2">Allergy and nutrition protocol</th>
-          <th colspan="2">Weight loss and nutriotion protocol</th>
-          <th colspan="2">Chakra balance</th>
-          <th colspan="2">Pelvic girdle assessment & alignment</th>
-          <th colspan="2">Animal sessions</th>
-        </tr>
-        <tr>
-          <td>1st session</td>
-          <td>sessions thereafter</td>
-          <td>1st session</td>
-          <td>sessions thereafter</td>
-          <td>1st session</td>
-          <td>sessions thereafter</td>
-          <td>1st session</td>
-          <td>sessions thereafter</td>
-          <td>1st session</td>
-          <td>sessions thereafter</td>
-          <td>1st session</td>
-          <td>sessions thereafter</td>
-        </tr>
-        <tr>
-          <td>60</td>
-          <td>40</td>
-          <td>90</td>
-          <td>60</td>
-          <td>90</td>
-          <td>60</td>
-          <td>45</td>
-          <td>-</td>
-          <td>90</td>
-          <td>60</td>
-          <td>90</td>
-          <td>90</td>
-        </tr>
-      </table>
+      <h1 style="text-align: center">WHAT I AM CAPABLE OF</h1>
+      <ul>
+        <li>KINESIOLOGY</li>
+        <li>KAHUNA MASSAGE</li>
+        <li>LYMPHATIC DRAINAGE</li>
+        <li>ALLERGY NUTRITION</li>
+        <li>WEIGHT MANAGEMENT</li>
+        <li>CHAKRA BALANCE</li>
+        <li>PELVIC GIRDLE ALIGNMENT</li>
+        <li>ANIMAL SESSIONS</li>
+        <li>ADRENAL FATIGUE</li>
+      </ul>
+      <button class="btn typesBtn" [routerLink]="['/home', {outlets: {'info': ['types']}}]">Please click here to go to the different types</button>
     </div>
   </div>
 </div>

@@ -21,6 +21,7 @@ import { BenefitsComponent } from './benefits/benefits.component';
 import { FoodForLifeComponent } from './food-for-life/food-for-life.component';
 import { JoinUsComponent } from './join-us/join-us.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { PricesComponent } from './prices/prices.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     BenefitsComponent,
     FoodForLifeComponent,
     JoinUsComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    PricesComponent
   ],
   imports: [
     ModalModule.forRoot(),

@@ -21,6 +21,9 @@
     h2{
         text-align: center;
     }
+    a{
+        color: #00e1ff;
+    }
     background-color: rgba(55, 130, 175, 0.8);
     border-radius: 30px;
     text-align: left;      
@@ -32,19 +35,8 @@
       padding-top: 2.5%;
       padding-bottom: 5%;
 }
-.prices{
-    margin-top: 2.5%;
-    font-size: 60;
-    background-color: rgba(55, 130, 175, 0.8);
-    padding: 0;
+.typesBtn{
     border-radius: 30px;
-    text-align: center;
-    .cost{
-        text-align: left;
-        font-size: medium;
-    }
-}
-.times{
-    text-align: center;
-    font-size: xx-small;
+    color: #00e1ff;
+    background-color: rgba(0, 8, 62, 0.5);
 }

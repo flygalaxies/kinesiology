@@ -1,9 +1,15 @@
 .types{
+    display: inline-block;
     background-color: rgba(55, 130, 175, 0.6);
-    margin: 1%;
-    padding: 2%;
+    margin: 1%;    
     border-radius: 30px;
     text-align: center;
+    .btn{
+        width: 100%;
+        max-width: 100%;
+        color: #00e1ff;
+        background-color: rgba(0, 0,0, 0);
+    }
     color: #00e1ff;
 }
 .container{
