@@ -1,15 +1,15 @@
 import {ModuleWithProviders} from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { BabsieComponent } from './babsie/babsie.component';
-import { MelinaComponent } from './melina/melina.component';
-import { WhatIsComponent } from 'app/what-is/what-is.component';
-import { TypesComponent } from './types/types.component';
-import { BenefitsComponent } from './benefits/benefits.component';
-import { FoodForLifeComponent } from './food-for-life/food-for-life.component';
-import { JoinUsComponent } from './join-us/join-us.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { PricesComponent } from './prices/prices.component';
+import { HomeComponent } from './main/home/home.component';
+import { BabsieComponent } from './kinesiologists/babsie/babsie.component';
+import { MelinaComponent } from './kinesiologists/melina/melina.component';
+import { WhatIsComponent } from './sessions/what-is/what-is.component';
+import { TypesComponent } from './sessions/types/types.component';
+import { BenefitsComponent } from './sessions/benefits/benefits.component';
+import { FoodForLifeComponent } from './main/food-for-life/food-for-life.component';
+import { JoinUsComponent } from './main/join-us/join-us.component';
+import { FeedbackComponent } from './main/feedback/feedback.component';
+import { PricesComponent } from './main/prices/prices.component';
 
 export const routes: Routes = [
   {
@@ -24,17 +24,26 @@ export const routes: Routes = [
       {
         path: 'whatIs',
         component: WhatIsComponent,
-        outlet: 'info'
+        outlet: 'info',
+        data: {
+          state : 'whatIs'
+        }
       },
       {
         path: 'types',
         component: TypesComponent,
-        outlet: 'info'
+        outlet: 'info',
+        data: {
+          state : 'types'
+        }
       },
       {
         path: 'benefits',
         component: BenefitsComponent,
-        outlet: 'info'
+        outlet: 'info',
+        data: {
+          state : 'benefits'
+        }
       }
     ]
   },
@@ -61,6 +70,10 @@ export const routes: Routes = [
   {
     path: 'prices',
     component: PricesComponent,    
+  },
+  {
+    path: '**',
+    redirectTo: 'home'    
   }
 ];
 

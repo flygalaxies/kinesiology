@@ -15,3 +15,14 @@
 .container{
     max-width: 90%;
 }
+
+.modal{
+    background-color: rgba(0, 3, 10, 0.7);
+}
+.modal-content{
+    color: #00e1ff;
+    background-color: rgba(55, 130, 175, 0.8);
+    .close{
+        color: #00e1ff;
+    }
+}

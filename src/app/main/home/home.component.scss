@@ -1,0 +1,31 @@
+.navigation{  
+  margin-bottom: 1%;   
+  background-color: rgba(55, 130, 175, 0.6);
+  max-width: 100%;        
+  .btn{
+    margin: 1%;
+    border-radius: 25px;
+    background-color: rgba(0, 8, 62, 0.5);
+    color: #00cbff;
+  }
+}
+.kinesiologists{
+  margin-top: 2.5%;  
+}
+@media screen and (max-width: 600px){
+  .definition{
+    display: none;
+  }
+  .benefits{
+    display: none;
+  }
+  .definitionMobile{
+    display: block;
+    margin-top: 2.5%;
+    height: 30vh;
+    border-radius: 30px;
+    background-color: rgba(0, 8, 62, 0.5);
+    text-align: center;
+    color: greenyellow;
+  }
+}

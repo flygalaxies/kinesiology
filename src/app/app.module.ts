@@ -4,24 +4,25 @@ import { CommonModule} from '@angular/common'
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { CarouselModule } from 'ngx-bootstrap';
 import {ModalModule} from 'ngx-bootstrap';
 import {AgmCoreModule} from '@agm/core';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { KinisiologistsComponent} from './kinisiologists/kinisiologists.component';
-import { BabsieComponent } from './babsie/babsie.component';
-import { MelinaComponent } from './melina/melina.component';
-import { WhatIsComponent } from "./what-is/what-is.component";
-import { TypesComponent } from './types/types.component';
-import { BenefitsComponent } from './benefits/benefits.component';
-import { FoodForLifeComponent } from './food-for-life/food-for-life.component';
-import { JoinUsComponent } from './join-us/join-us.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { PricesComponent } from './prices/prices.component';
+import { NavbarComponent } from './main/navbar/navbar.component';
+import { HomeComponent } from './main/home/home.component';
+import { KinisiologistsComponent} from './main/kinisiologists/kinisiologists.component';
+import { BabsieComponent } from './kinesiologists/babsie/babsie.component';
+import { MelinaComponent } from './kinesiologists/melina/melina.component';
+import { WhatIsComponent } from './sessions/what-is/what-is.component';
+import { TypesComponent } from './sessions/types/types.component';
+import { BenefitsComponent } from './sessions/benefits/benefits.component';
+import { FoodForLifeComponent } from './main/food-for-life/food-for-life.component';
+import { JoinUsComponent } from './main/join-us/join-us.component';
+import { FeedbackComponent } from './main/feedback/feedback.component';
+import { PricesComponent } from './main/prices/prices.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { PricesComponent } from './prices/prices.component';
     PricesComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
     BrowserModule,

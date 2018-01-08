@@ -1,0 +1,11 @@
+<div class="container navigation">
+  <div class="row justify-content-center">
+    <button class="btn col-2" [routerLink]="['/home', {outlets: {'info': ['whatIs']}}]">KEFIR</button>
+    <button class="btn col-2" [routerLink]="['/home', {outlets: {'info': ['benefits']}}]">BAKING</button>
+    <button class="btn col-2" [routerLink]="['/home', {outlets: {'info': ['types']}}]">CLEANING</button>
+  </div>
+</div>
+<div class="temp">
+<router-outlet name="foodForLife"></router-outlet>
+<h1>THIS PAGE IS STILL IN DEVELOPMENT, PLEASE COME BACK ANOTHER TIME</h1>
+</div>
