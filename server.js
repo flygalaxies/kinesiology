@@ -35,6 +35,12 @@ app.set('views', 'dist');
 /* Direct all routes to index.html, where Angular will take care of routing */
 app.get('*', angularRouter);
 
-app.listen(3000, '192.168.1.39', 511, () => {
-  console.log(`Listening on http://192.168.1.39:3000`);
-});
+if (process.argv[2] && process.argv[3]) {
+  app.listen(process.argv[3], process.argv[2], 511, () => {
+    console.log('Listening on ' + process.argv[2] + ':' + process.argv[3]);
+  });
+}else{
+  app.listen(3000, () => {
+    console.log('Listening on localhost:3000  ** TO CHANGE THE LISTENING IP AND PORT ** node server.js <IP> <PORT> ** IMPORTANT TO ENTER BOTH IP AND PORT');
+  });
+}
