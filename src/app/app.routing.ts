@@ -1,15 +1,15 @@
-import {ModuleWithProviders} from '@angular/core';
-import { RouterModule, Routes} from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './main/home/home.component';
-import { BabsieComponent } from './kinesiologists/babsie/babsie.component';
-import { MelinaComponent } from './kinesiologists/melina/melina.component';
-import { WhatIsComponent } from './sessions/what-is/what-is.component';
-import { TypesComponent } from './sessions/types/types.component';
-import { BenefitsComponent } from './sessions/benefits/benefits.component';
+import { BabsieComponent } from '../app/main/kinisiologists/babsie/babsie.component';
+import { MelinaComponent } from '../app/main/kinisiologists/melina/melina.component';
 import { FoodForLifeComponent } from './main/food-for-life/food-for-life.component';
 import { JoinUsComponent } from './main/join-us/join-us.component';
 import { FeedbackComponent } from './main/feedback/feedback.component';
 import { PricesComponent } from './main/prices/prices.component';
+import { DefinitionComponent } from '../app/main/home/definition/definition.component';
+import { BenefitsComponent } from '../app/main/home/benefits/benefits.component';
+import { TypesComponent } from '../app/main/home/types/types.component';
 
 export const routes: Routes = [
   {
@@ -20,30 +20,21 @@ export const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    children:[
+    children: [
       {
-        path: 'whatIs',
-        component: WhatIsComponent,
+        path: 'define',
+        component: DefinitionComponent,
         outlet: 'info',
-        data: {
-          state : 'whatIs'
-        }
       },
       {
         path: 'types',
         component: TypesComponent,
-        outlet: 'info',
-        data: {
-          state : 'types'
-        }
+        outlet: 'info',        
       },
       {
         path: 'benefits',
         component: BenefitsComponent,
         outlet: 'info',
-        data: {
-          state : 'benefits'
-        }
       }
     ]
   },
@@ -69,11 +60,11 @@ export const routes: Routes = [
   },
   {
     path: 'prices',
-    component: PricesComponent,    
+    component: PricesComponent,
   },
   {
     path: '**',
-    redirectTo: 'home'    
+    redirectTo: 'home'
   }
 ];
 
