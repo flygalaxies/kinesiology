@@ -9,7 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.png"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,9 +19,22 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "scss/styles.scss"
       ],
       "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "Kinesiology-Practice",
+      "platform": "server",
+      "root": "src",
+      "outDir": "dist-server",
+      "main": "main.server.ts",
+      "tsconfig": "tsconfig.server.json",
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -54,7 +67,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   }
 }
