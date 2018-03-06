@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+@mixin themify($primary, $secondary, $tertiary){
+    .container{
+        margin: 0;
+        max-width: 100%;
+    }
+    .#{$primary}{
+        background-color: $B300;
+         height: 15vh;
+    }
+    .#{$secondary}{
+        background-color: $B600;
+        //border-radius: 15px        
+    }
+    .#{$tertiary}{
+        
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../../scss/styles.scss';
+
+@include themify('primary', 'secondary', null);
+
+.row{
+    height: 100%;
+}
+#logo{
+    width: 75%;    
+}
+#title{
+    text-align: center;
+    height: 50%;
+}
+.secondary{
+    height: 50%;  
+    max-width: 100%;
+    .container{
+        height: 100%;
+    }  
+    a{        
+        width: 15%;        
+        color: #f2f2f2;
+        text-align: center;                
+        padding: 1%;        
+        font-size: 1.5em;
+    }
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }    
+}
