@@ -5,13 +5,15 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
 import { TopBarComponent } from './Components/top-bar/top-bar.component';
+import { KinesiologyComponent } from './Components/kinesiology/kinesiology.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TopBarComponent
+    TopBarComponent,
+    KinesiologyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'Kinesiology-Practice'}),

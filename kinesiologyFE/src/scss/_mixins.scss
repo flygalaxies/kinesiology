@@ -2,11 +2,11 @@
 
 @mixin themify($primary, $secondary, $tertiary){
     .container{
-        margin: 0;
+        // margin: 0;
         max-width: 100%;
     }
     .#{$primary}{
-        background-color: $B300;
+        background-color: $T300;
          height: 15vh;
     }
     .#{$secondary}{
@@ -14,6 +14,6 @@
         //border-radius: 15px        
     }
     .#{$tertiary}{
-        
+        background-color: $B900;        
     }
 }

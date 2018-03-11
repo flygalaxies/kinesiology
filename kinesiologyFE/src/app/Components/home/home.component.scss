@@ -1,0 +1,39 @@
+@import '../../../scss/styles.scss';
+
+@include themify(null, null, null);
+
+.kinesiology{
+    padding: 0;
+    height: 50vh;
+    background-color: $T500;    
+    img{
+        width: 100%;
+    }
+    -webkit-filter: grayscale(75%)        ;
+    filter: grayscale(75%);
+    cursor: pointer;
+}
+.kinesiology:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.forLife{
+    height: 50vh;
+    background-color: $B900;
+    -webkit-filter: grayscale(75%)        ;
+    filter: grayscale(75%);
+}
+.forLife:hover{
+    -webkit-filter: grayscale(0%)        ;
+    filter: grayscale(0%);
+}
+.workshops{
+    height: 50vh;
+    background-color: $BA100;
+    -webkit-filter: grayscale(75%)        ;
+    filter: grayscale(75%);
+}
+.workshops:hover{
+    -webkit-filter: grayscale(0%)        ;
+    filter: grayscale(0%);
+}
