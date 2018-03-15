@@ -1,6 +1,6 @@
 @import '../../../scss/styles.scss';
 
-@include themify(null, null, null);
+@include themify();
 
 .kinesiology{
     padding: 0;

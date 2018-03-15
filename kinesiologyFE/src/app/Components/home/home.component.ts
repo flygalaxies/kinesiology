@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.canvas();
+    // this.canvas();
   }
   canvas() {
     let canvas = document.querySelector('canvas');    
