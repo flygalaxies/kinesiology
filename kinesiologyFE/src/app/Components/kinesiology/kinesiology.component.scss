@@ -1,0 +1,14 @@
+@import '../../../scss/styles.scss';
+@include themify();
+
+.container {
+}
+
+.nav {
+  height: 5vh;
+}
+
+.side {
+  height: 50vh;
+  width: 10vw;
+}
